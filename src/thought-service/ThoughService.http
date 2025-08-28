@@ -1,0 +1,6 @@
+@ThoughService_HostAddress = http://localhost:5205
+
+GET {{ThoughService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
