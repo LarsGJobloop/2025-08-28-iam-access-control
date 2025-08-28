@@ -16,6 +16,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         jwtOptions.Authority = "oidc.jobloop.com";
         // Your application usually (the site the app is hosted under)
         jwtOptions.Audience = "localhost";
+        // We have no TLS certicate, so disable
+        jwtOptions.RequireHttpsMetadata = false;
     });
 
 var app = builder.Build();
