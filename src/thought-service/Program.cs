@@ -14,7 +14,9 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
+// TLS Certificates are slightly difficult to setup
+// so we ignore them for now
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
