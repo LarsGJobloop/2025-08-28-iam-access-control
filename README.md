@@ -13,3 +13,7 @@
 └── src # Containes the various services
     └── thought-service # A single service Solution file and Project code
 ```
+
+## Reference
+
+- [JWT Generator](https://jwtbuilder.jamiekurtz.com/)
